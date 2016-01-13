@@ -45,3 +45,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'samurai_core', path: 'engines/core'
