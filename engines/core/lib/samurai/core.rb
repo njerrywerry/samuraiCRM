@@ -1,4 +1,4 @@
-require "core/engine"
-
-module Core
+module Samurai
+  module Core
+  end
 end
