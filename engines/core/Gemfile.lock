@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    core (0.0.1)
+    samurai_core (0.0.1)
       rails (~> 4.2.5)
 
 GEM
@@ -104,7 +104,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  core!
+  samurai_core!
   sqlite3
 
 BUNDLED WITH
