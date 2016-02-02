@@ -1,4 +1,12 @@
 PATH
+  remote: engines/contacts
+  specs:
+    samurai_contacts (0.0.1)
+      deface
+      rails (~> 4.2.5)
+      samurai_core
+
+PATH
   remote: engines/core
   specs:
     samurai_core (0.0.1)
@@ -67,8 +75,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
+    colorize (0.7.7)
     concurrent-ruby (1.0.0)
     debug_inspector (0.0.2)
+    deface (1.0.2)
+      colorize (>= 0.5.8)
+      nokogiri (~> 1.6.0)
+      polyglot
+      rails (>= 3.1)
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -96,10 +110,12 @@ GEM
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
+    modular_engine (0.9.5)
     multi_json (1.11.2)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
+    polyglot (0.3.5)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -175,9 +191,12 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  deface
   jbuilder (~> 2.0)
   jquery-rails
+  modular_engine
   rails (= 4.2.5)
+  samurai_contacts!
   samurai_core!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
